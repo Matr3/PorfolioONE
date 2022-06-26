@@ -1,0 +1,94 @@
+.headerPrincipal .container, .sobreMi .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerPrincipal_nav{
+    display: flex;
+}
+
+/*Empiza el contenido del main*/
+.contenidoPrincipal_text{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+.redesSociales{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Empieza Sobre mi*/
+.sobreMi_text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.skills_text, .hobbies_text, .formacion_text, .proyectos_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sobreMi_text__list{
+    display: flex;
+}
+
+/*Skills*/
+.skills .container, .hobbies .container, .formacion .container, .proyectos .container, .contacto .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.skills_text__list, .hobbies_text__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.formacion_text__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.proyectos_text__list{
+    display: flex;
+    justify-content: space-around;
+}
+.proyectos_text__area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.container_proyectos{
+	display: flex;
+	justify-content: space-around;
+}
+.skills_text__item, .hobbies_text__item, .formacion_text__item, .proyectos_text__item{
+    display: flex;
+    
+    justify-content: space-around;
+}
+/*Empieza contenido del Footer*/
+.piePagina_pincipal .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+	.container{
+		flex-direction: column;
+	}
+    .sobreMi_text__list {
+        flex-wrap: wrap;
+    }
+    .sobreMi_text, .skills_text, .hobbies_text, .formacion_text, .proyectos_text {
+        width: 85%;
+    }
+    .container_proyectos{
+        flex-direction: column;
+    }
+}

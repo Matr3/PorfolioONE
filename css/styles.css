@@ -1,0 +1,384 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+	background: black;
+}
+.animation_background{
+    display: block;
+}
+.headerPrincipal{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+	position: relative;
+	animation: fadeIn ease 2s backwards;
+	animation-delay: 3s;
+}
+@keyframes fadeIn {
+	from {
+		transform: translateY(-25%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOuput {
+	from {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateY(-45%);
+		opacity: 0;
+	}
+}
+.container{
+    margin: 0 auto;
+	padding: 0 10px 0 10px;
+    
+}
+.header_logo {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: white;
+	top: 0px;
+}
+.headerPrincipal_nav__link {
+	padding: 10px;	
+	background: transparent;
+	color: #9799A6;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	border: none;
+}
+.headerPrincipal_nav__link:hover {
+    border-bottom: rgb(225, 100, 10) 1px solid;
+
+}
+
+.headerPrincipal_email a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.7em;
+	color:  rgb(225, 100, 10);
+}
+
+/*Empieza el contenido del main*/
+.principal {
+	position: relative;
+}
+
+.contenidoPrincipal {
+	position: relative;
+	margin: 5% auto;
+    
+}
+.redesSociales{
+	margin: 0 auto;
+
+}
+.contenidoPrincipal_link {
+	color: white;
+	width: 10%;
+	padding: 100px 0;
+}
+.presentacion_lista{
+    margin-top: 25px;
+}
+.presentacion {
+	font-size: 1.5em;
+	color: rgb(225, 100, 10);
+	animation: fadeInBotton ease 2s backwards;
+}
+.presentacion1 {
+	font-size: 2em;
+	color: rgb(253, 255, 255);
+	animation: fadeInBotton ease 2s backwards;
+}
+.presentacion2 {
+	font-size: 1.2em;
+	color: rgb(225, 100, 10);
+	animation: fadeInBotton ease 2s backwards;
+}
+
+.imgEmpresarial{
+	position: relative;
+	
+	max-width: 300px;
+	max-height: 300px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: rgb(225, 100, 10) solid 5px;
+    animation: imgRotate 5s backwards;
+	animation-delay: 2s;
+}
+
+
+@keyframes imgRotate{
+    0%{
+        clip-path: circle(0% at 50% 50%);
+		
+        
+      }
+     30%,100%{
+        clip-path: circle(50% at 50% 50%);
+      }
+    }
+
+	@keyframes -imgRotate{
+		0%{
+			
+			clip-path: circle(50% at 50% 50%);
+			
+		  }
+		 30%,100%{
+			
+			clip-path: circle(0% at 50% 50%);
+		  }
+		}
+
+.img_personal{
+	width: 100%;
+  	height: 100%;
+  
+}
+@keyframes fadeInBotton {
+	from {
+		transform: translateY(75%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOuputTop {
+	from {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateY(-45%);
+		opacity: 0;
+	}
+}
+
+.comentario{
+	width: auto;
+	font-size: 1.5em;
+    margin-top: 20px;
+	padding-left: 20px;
+	color: white;
+	animation: fadeInLeft ease 4s backwards;
+}
+
+@keyframes fadeInLeft {
+	from {
+		transform: translateX(-75%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOuputRight {
+	from {
+		transform: translateX(auto);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateX(-45%);
+		opacity: 0;
+	}
+}
+
+
+/*Empieza Sobre MI*/
+
+.sobreMi, .skills, .hobbies, .formacion, .proyectos, .contacto{
+    display: none;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.5);	
+	border: gray 1px solid;
+	border-radius: 15px;
+	animation: fadeInLeft ease 2s backwards;
+	max-width: max-content;
+}
+
+.sobreMi .container, .skills .container, .hobbies .container, .formacion .container, .proyectos .container, .contacto .container {
+	color: #FFF;
+	
+}
+.sobreMi_text__item{
+	font-family: ui-serif;
+	padding: 20px;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	
+}
+.skills_text__item, .hobbies_text__item{
+	padding: 0 20px;
+	width: 10rem;
+	
+}
+.formacion_text__item{
+	padding-top: 10px;
+	width: 25rem;
+	color: #9799A6;
+	font-weight: bold;	
+}
+.formacion_text__item a{
+	text-decoration: none;
+	color: #9799A6;
+}
+.proyectos_text__item{
+	padding: 0 20px;
+	width: 20rem;
+	
+}
+.skills_text__list, .hobbies_text__list, .formacion_text__list{
+	margin: 10px;
+}
+.proyectos_text__list{
+	margin: 10px;
+	
+}
+.container_proyectos{
+	margin: 20px 0;
+}
+.proyectos_text__area{
+	height: 250px;
+}
+.sobreMi_text__title, .skills_text__title, .hobbies_text__title, .formacion_text__title, .proyectos_text__title, .contacto__titulo{
+	color: rgb(255, 100, 10);
+	font-family: serif;
+	font-size: 2em;
+	font-weight: bolder;
+	text-decoration:underline solid rgb(255, 100, 10);
+	
+}
+.img1{
+	background: url("../img/ahorcado.png") no-repeat;
+	background-size: cover;
+}
+.img2{
+	background: url("../img/encriptador.png") no-repeat;
+	background-size: cover;
+}
+.bg{
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.sobreMi_text, .skills_text, .hobbies_text, .formacion_text, .proyectos_text{
+	text-align:justify;
+	line-height: 1.5;
+    width: 50rem;
+}
+.styleSobreMi{
+	border-right: gray 1px solid;
+	
+	text-align: right;
+	background-color: rgba(255, 100, 10, 0.3);
+	box-shadow: 0px 12px 24px -8px rgb(255, 100, 10);
+	
+
+}
+.styleSobreMi p{
+	font-size: 1.2em;
+	color: rgb(225, 100, 10);
+}
+.styleCursiva{
+	font-family: system-ui;
+	font-size: 1.2em;
+}
+.sobreMi_button{
+	border-radius: 8px;
+	background-color: rgb(255, 100, 10);
+	display: block;
+	color: #FFF;
+	border: none;
+	height: 50px;
+	width: 100px;
+	font-size: .8em;
+	outline: none;
+}
+.proyectos_button, .contacto__boton{
+	margin-top: 5px;
+	background-color: rgb(255, 100, 10);
+	display: block;
+	color: #FFF;
+	border: none;
+	height: 25px;
+	font-size: .8em;
+	outline: none;
+}
+.proyectos_button:hover, .contacto__boton:hover{
+	background-color: rgb(255, 59, 10);
+}
+
+@keyframes crescendo {
+	0% {
+		transform: scale(.8);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.alura-logo{
+	height: 100px;
+}
+.contacto{
+	padding: 20px;
+}
+.formulario{
+	margin-left: 20px;
+}
+.input-container{
+	margin-bottom: 20px;
+}
+.contacto__input, .contacto__textarea{
+	font-size: 1.2em;
+	background-color: transparent;
+	padding: 5px;
+	color: rgb(255, 59, 10);
+	border-radius: 10px;
+	border: 00.5px solid rgb(255, 100, 10);
+}
+/*Empieza Footer*/
+.piePagina{
+    background: black;
+	border-top: solid 0.5px rgb(255, 100, 10);
+    text-align: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:60px;
+    width:100%;
+}
+.piePagina_pincipal {
+	padding: 20px 0;
+}
+h3{
+	font-size: 0.8em;
+	color: #9799A6;
+}
+
+@media screen and (max-width:768px) {
+	.sobreMi, .skills, .hobbies, .formacion, .proyectos, .contacto{
+		display: flex;
+	}
+}

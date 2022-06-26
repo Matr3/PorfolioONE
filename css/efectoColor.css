@@ -1,0 +1,47 @@
+.contenidoPrincipal_link__1,
+.contenidoPrincipal_link__2,
+.contenidoPrincipal_link__3,
+.skills_text__item,
+.hobbies_text__item {
+    font-size: 4em;
+    color: #fff;
+    
+    margin: 10px;
+    animation: animate 3s linear infinite, -rotate ease 1s backwards;
+   /*animation: rotate ease 1s backwards;*/
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+        0 0 200px #0072ff;
+       
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    to{
+        transform: rotate(-360deg);
+        opacity: 0;
+        
+    }
+}
+@keyframes -rotate {
+    from {
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
