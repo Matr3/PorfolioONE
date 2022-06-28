@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-	background: black;
+	background-color: rgb(61, 60, 60);
 }
 .animation_background{
     display: block;
@@ -383,6 +383,6 @@ h3{
 	}
 	.animation_background{
 		display: none;
-		background: #45464b;
+		
 	}
 }
