@@ -381,4 +381,8 @@ h3{
 	.sobreMi, .skills, .hobbies, .formacion, .proyectos, .contacto{
 		display: flex;
 	}
+	.animation_background{
+		display: none;
+		background: #45464b;
+	}
 }
