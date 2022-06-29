@@ -409,9 +409,7 @@ h3{
 	.contenidoPrincipal{
 		margin: 5%;
 	}
-	.formacion_text__list{
-		flex-direction: column;
-	}
+
 	.proyectos_text__item{
 		width: auto;
 	}
@@ -424,4 +422,10 @@ h3{
 	.piePagina{
 		position: relative;
 	}
+}
+
+@media screen and (min-width:360px) {
+.formacion_text__item{
+	width: auto;
+}
 }
