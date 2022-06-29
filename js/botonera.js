@@ -342,3 +342,8 @@ btContacto.addEventListener("click", function(codificacion){
       }
   }
         });
+
+        var btcv = document.querySelector("#cv");
+        btcv.addEventListener("click", function(codificacion){
+          window.open('./img/Profile.pdf', '_blank');
+        });
