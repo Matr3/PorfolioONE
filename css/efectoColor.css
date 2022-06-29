@@ -52,6 +52,7 @@
 .skills_text__item,
 .hobbies_text__item {
     animation: none;
+    text-shadow: none;
 }
 
 }

@@ -10,7 +10,7 @@ body {
     padding: 10px;
 	position: relative;
 	animation: fadeIn ease 2s backwards;
-	animation-delay: 3s;
+	animation-delay: 1s;
 }
 @keyframes fadeIn {
 	from {
@@ -417,7 +417,7 @@ h3{
 		margin-bottom: 40px;
 	}
 	.formulario{
-		margin: 20px;
+		margin: 20px 0;
 	}
 	.piePagina{
 		position: relative;
@@ -428,4 +428,21 @@ h3{
 .formacion_text__item{
 	width: auto;
 }
+.proyectos_button, .contacto__boton {
+	/* height: 25px; */
+	/* font-size: .8em; */
+	height: 37px;
+	font-size: 1.2em;
+  }
+ 
+.proyectos_text__area {
+	/* height: 250px; */
+	height: 291px;
+  }
+
+.sobreMi_text, .skills_text, .hobbies_text, .formacion_text, .proyectos_text {
+	/* text-align: justify; */
+	text-align: center;
+  }
+
 }
