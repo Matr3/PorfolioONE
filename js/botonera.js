@@ -43,37 +43,40 @@ function aimationMenuFadeOuput(){
 
 var btSobreMi = document.querySelector("#btSobreMi");
 btSobreMi.addEventListener("click", function(){
-  aimationMenuFadeOuput();
-  animationHome();
-  document.querySelector(".sobreMi").style.animation = "fadeInLeft ease 2s backwards";
-  animationSkills();
-  animationHobbies();
-  animationFormacion();
-  animationProyectos();
-  animationContactos();
-var timeLeft = 10; 
-var timerId = setInterval(countdown, 1000);
+  if (screen.width > 768){
+    aimationMenuFadeOuput();
+    animationHome();
+    document.querySelector(".sobreMi").style.animation = "fadeInLeft ease 2s backwards";
+    animationSkills();
+    animationHobbies();
+    animationFormacion();
+    animationProyectos();
+    animationContactos();
+  var timeLeft = 10; 
+  var timerId = setInterval(countdown, 1000);
+  
+  function countdown() {
+      if (timeLeft == -1) {
+          clearTimeout(timerId);
+         
+      } else {
+        if(timeLeft==9)
+        {
+           muestraDiv();
+        }  
+        if(timeLeft==8){
+          aimationMenuFadeIn();
+          document.querySelector(".sobreMi").style.display = "flex";
+          document.querySelector(".social").style.display = "flex";
+          document.querySelector(".contenidoPrincipal_link__1").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
+          document.querySelector(".contenidoPrincipal_link__2").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
+          document.querySelector(".contenidoPrincipal_link__3").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
+        }      
+        
+          timeLeft--;
+      }
+  }
 
-function countdown() {
-    if (timeLeft == -1) {
-        clearTimeout(timerId);
-       
-    } else {
-      if(timeLeft==9)
-      {
-         muestraDiv();
-      }  
-      if(timeLeft==8){
-        aimationMenuFadeIn();
-        document.querySelector(".sobreMi").style.display = "flex";
-        document.querySelector(".social").style.display = "flex";
-        document.querySelector(".contenidoPrincipal_link__1").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
-        document.querySelector(".contenidoPrincipal_link__2").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
-        document.querySelector(".contenidoPrincipal_link__3").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
-      }      
-      
-        timeLeft--;
-    }
 }
 
 function muestraDiv() {
@@ -90,6 +93,7 @@ function muestraDiv() {
 
 var btSkills = document.querySelector("#btSkills");
 btSkills.addEventListener("click", function(){
+  if (screen.width > 768){
   aimationMenuFadeOuput();
   animationHome();
   document.querySelector(".skills").style.animation = "fadeInLeft ease 2s backwards";
@@ -132,10 +136,12 @@ function muestraDiv() {
     document.querySelector(".proyectos").style.display = "none";
     document.querySelector(".contacto").style.display = "none";
 }
+}
 });
 
 var btHobbies = document.querySelector("#btHobbies");
 btHobbies.addEventListener("click", function(codificacion){
+  if (screen.width > 768){
     codificacion.preventDefault();
     aimationMenuFadeOuput();
     animationHome();
@@ -180,11 +186,13 @@ btHobbies.addEventListener("click", function(codificacion){
       document.querySelector(".proyectos").style.display = "none"; 
       document.querySelector(".contacto").style.display = "none";
   }
+}
 });
 
 
   var btFormacion = document.querySelector("#btFormacion");
   btFormacion.addEventListener("click", function(codificacion){
+    if (screen.width > 768){
       codificacion.preventDefault();
       aimationMenuFadeOuput();
       animationHome();
@@ -229,12 +237,13 @@ btHobbies.addEventListener("click", function(codificacion){
       document.querySelector(".proyectos").style.display = "none";
       document.querySelector(".contacto").style.display = "none";
   }
-
+    }
     });
 
 
     var btProyectos = document.querySelector("#btProyectos");
     btProyectos.addEventListener("click", function(codificacion){
+      if (screen.width > 768){
         codificacion.preventDefault();
         aimationMenuFadeOuput();
         animationHome();
@@ -279,12 +288,13 @@ btHobbies.addEventListener("click", function(codificacion){
         document.querySelector(".formacion").style.display = "none";
         document.querySelector(".contacto").style.display = "none";
     }
-  
+      }
       });
 
 
 var btContacto = document.querySelector("#btContacto");
 btContacto.addEventListener("click", function(codificacion){
+  if (screen.width > 768){
           codificacion.preventDefault();
           aimationMenuFadeOuput();
           animationHome();
@@ -330,5 +340,5 @@ btContacto.addEventListener("click", function(codificacion){
           document.querySelector(".proyectos").style.display = "none";
           
       }
-    
+  }
         });

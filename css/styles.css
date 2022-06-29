@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-	background-color: rgb(61, 60, 60);
+	background-color: rgb(31, 29, 29);
 }
 .animation_background{
     display: block;
@@ -378,11 +378,50 @@ h3{
 }
 
 @media screen and (max-width:768px) {
-	.sobreMi, .skills, .hobbies, .formacion, .proyectos, .contacto{
-		display: flex;
+	.header_logo{
+		display: none;
 	}
+	.headerPrincipal_nav__link{
+		font-size: 1.4em;
+	}
+	.principal{
+		margin: 20px;
+	}
+	
+	.sobreMi, .skills, .hobbies, .formacion, .proyectos, .contacto{
+		animation: none;
+		max-width: none;
+		margin-bottom: 20px;
+	}
+	.styleSobreMi{
+		border-top: gray 1px solid;
+	}
+	
 	.animation_background{
 		display: none;
 		
+	}
+	.headerPrincipal{
+		background-color: black;
+		animation: none;
+		border-bottom: solid 0.5px rgb(255, 100, 10);
+	}
+	.contenidoPrincipal{
+		margin: 5%;
+	}
+	.formacion_text__list{
+		flex-direction: column;
+	}
+	.proyectos_text__item{
+		width: auto;
+	}
+	.proyectos_text__area{
+		margin-bottom: 40px;
+	}
+	.formulario{
+		margin: 20px;
+	}
+	.piePagina{
+		position: relative;
 	}
 }

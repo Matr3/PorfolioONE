@@ -82,6 +82,11 @@
 	.container{
 		flex-direction: column;
 	}
+    .sobreMi, .skills, .hobbies, .formacion, .proyectos, .contacto{
+		display: flex;
+		
+		
+	}
     .sobreMi_text__list {
         flex-wrap: wrap;
     }
@@ -91,4 +96,9 @@
     .container_proyectos{
         flex-direction: column;
     }
+    .contenidoPrincipal_text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
