@@ -45,3 +45,13 @@
         opacity: 1;
     }
 }
+@media screen and (max-width:768px) {
+    .contenidoPrincipal_link__1,
+.contenidoPrincipal_link__2,
+.contenidoPrincipal_link__3,
+.skills_text__item,
+.hobbies_text__item {
+    animation: none;
+}
+
+}
