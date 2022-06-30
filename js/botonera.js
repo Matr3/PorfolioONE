@@ -58,6 +58,7 @@ btSobreMi.addEventListener("click", function () {
     function eliminaDiv() {
       document.querySelector(".principal").style.display = "none";
       document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".skills").style.display = "none";
       document.querySelector(".hobbies").style.display = "none";
       document.querySelector(".social").style.display = "none";
       document.querySelector(".formacion").style.display = "none";
@@ -105,6 +106,7 @@ btSkills.addEventListener("click", function () {
     function eliminaDiv() {
       document.querySelector(".principal").style.display = "none";
       document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".skills").style.display = "none";
       document.querySelector(".hobbies").style.display = "none";
       document.querySelector(".social").style.display = "none";
       document.querySelector(".formacion").style.display = "none";
@@ -151,6 +153,7 @@ btHobbies.addEventListener("click", function () {
       document.querySelector(".principal").style.display = "none";
       document.querySelector(".sobreMi").style.display = "none";
       document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".skills").style.display = "none";
       document.querySelector(".social").style.display = "none";
       document.querySelector(".formacion").style.display = "none";
       document.querySelector(".proyectos").style.display = "none";
@@ -198,6 +201,7 @@ btFormacion.addEventListener("click", function () {
     function eliminaDiv() {
       document.querySelector(".principal").style.display = "none";
       document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".skills").style.display = "none";
       document.querySelector(".hobbies").style.display = "none";
       document.querySelector(".social").style.display = "none";
       document.querySelector(".formacion").style.display = "none";
@@ -246,6 +250,7 @@ btProyectos.addEventListener("click", function () {
     function eliminaDiv() {
       document.querySelector(".principal").style.display = "none";
       document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".skills").style.display = "none";
       document.querySelector(".hobbies").style.display = "none";
       document.querySelector(".social").style.display = "none";
       document.querySelector(".formacion").style.display = "none";
@@ -295,6 +300,7 @@ btContacto.addEventListener("click", function () {
       document.querySelector(".principal").style.display = "none";
       document.querySelector(".sobreMi").style.display = "none";
       document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".skills").style.display = "none";
       document.querySelector(".social").style.display = "none";
       document.querySelector(".formacion").style.display = "none";
       document.querySelector(".proyectos").style.display = "none";
