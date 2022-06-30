@@ -4,8 +4,7 @@
 .skills_text__item,
 .hobbies_text__item {
     font-size: 4em;
-    color: #fff;
-    
+    color: #fff; 
     margin: 10px;
     animation: animate 3s linear infinite, -rotate ease 1s backwards;
    /*animation: rotate ease 1s backwards;*/
@@ -47,12 +46,11 @@
 }
 @media screen and (max-width:768px) {
     .contenidoPrincipal_link__1,
-.contenidoPrincipal_link__2,
-.contenidoPrincipal_link__3,
-.skills_text__item,
-.hobbies_text__item {
-    animation: none;
-    text-shadow: none;
-}
-
+    .contenidoPrincipal_link__2,
+    .contenidoPrincipal_link__3,
+    .skills_text__item,
+    .hobbies_text__item {
+        animation: none;
+        text-shadow: none;
+    }
 }

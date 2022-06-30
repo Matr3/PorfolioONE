@@ -68,6 +68,7 @@
                 </div>
             </div>
         </section>
+        <!---->
         <section id="sobreMi_nav" class="sobreMi">
             <div class="container">
                 <div class="sobreMi_text">
@@ -167,24 +168,24 @@
         <section id="contacto_nav" class="contacto">
             <div class="container">
                 <h2 class="contacto__titulo">Contacto</h2>
-                <form action="#" class="formulario">
+                <form action="#" class="formulario" id="formulario" method="post">
                     <div class="input-container">
-                        <input class="contacto__input" type="text" name="nombre" id="nombre"
-                            placeholder="Nombre y Apellido" data-tipo="nombre">
+                        <input class="contacto__input" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" data-tipo="nombre">
+                        <label for="nombre"></label>
                     </div>
                     <div class="input-container">
-                        <input class="contacto__input" type="text" name="email" id="email" placeholder="E-mail"
-                            data-tipo="email">
+                        <input class="contacto__input" type="text" name="email" id="email" placeholder="E-mail" data-tipo="email" >
+                        <label for="email"></label>
                     </div>
                     <div class="input-container">
-                        <input class="contacto__input" type="text" name="asunto" id="asunto" placeholder="Asunto"
-                            data-tipo="asunto">
+                        <input class="contacto__input" type="text" name="asunto" id="asunto" placeholder="Asunto" data-tipo="asunto" >
+                        <label for="asunto"></label>
                     </div>
                     <div class="input-container">
-                        <textarea class="contacto__textarea" rows="5" cols="26" id="mensaje" name="mensaje"
-                            placeholder="Su mensaje" data-tipo="mensaje"></textarea>
+                        <textarea class="contacto__textarea" rows="5" cols="26" id="mensaje" name="mensaje" placeholder="Su mensaje" data-tipo="mensaje"></textarea>
+                        <label for="mensaje"></label>
                     </div>
-                    <button class="contacto__boton" name="enviar" disabled="True">Enviar mensaje</button>
+                    <input type="submit" class="contacto__boton" name="enviar" id="btn-enviar">
                 </form>
             </div>
             </div>

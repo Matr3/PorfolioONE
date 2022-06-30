@@ -41,6 +41,8 @@ function aimationMenuFadeOuput() {
   document.querySelector(".headerPrincipal").style.animation = "fadeOuput ease 3s backwards";
 }
 
+
+
 var btSobreMi = document.querySelector("#btSobreMi");
 btSobreMi.addEventListener("click", function () {
   if (screen.width > 768) {
@@ -52,16 +54,26 @@ btSobreMi.addEventListener("click", function () {
     animationFormacion();
     animationProyectos();
     animationContactos();
+    
+    function eliminaDiv() {
+      document.querySelector(".principal").style.display = "none";
+      document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".social").style.display = "none";
+      document.querySelector(".formacion").style.display = "none";
+      document.querySelector(".proyectos").style.display = "none";
+      document.querySelector(".contacto").style.display = "none";
+    }
+
     var timeLeft = 9;
     var timerId = setInterval(countdown, 1000);
-
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
 
       } else {
         if (timeLeft == 9) {
-          muestraDiv();
+          eliminaDiv();
         }
         if (timeLeft == 8) {
           aimationMenuFadeIn();
@@ -71,21 +83,9 @@ btSobreMi.addEventListener("click", function () {
           document.querySelector(".contenidoPrincipal_link__2").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
           document.querySelector(".contenidoPrincipal_link__3").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
         }
-
         timeLeft--;
       }
     }
-
-  }
-
-  function muestraDiv() {
-    document.querySelector(".principal").style.display = "none";
-    document.querySelector(".skills").style.display = "none";
-    document.querySelector(".hobbies").style.display = "none";
-    document.querySelector(".social").style.display = "none";
-    document.querySelector(".formacion").style.display = "none";
-    document.querySelector(".proyectos").style.display = "none";
-    document.querySelector(".contacto").style.display = "none";
   }
 });
 
@@ -101,16 +101,25 @@ btSkills.addEventListener("click", function () {
     animationFormacion();
     animationProyectos();
     animationContactos();
+
+    function eliminaDiv() {
+      document.querySelector(".principal").style.display = "none";
+      document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".social").style.display = "none";
+      document.querySelector(".formacion").style.display = "none";
+      document.querySelector(".proyectos").style.display = "none";
+      document.querySelector(".contacto").style.display = "none";
+    }
+
     var timeLeft = 9;
     var timerId = setInterval(countdown, 1000);
-
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
-
       } else {
         if (timeLeft == 9) {
-          muestraDiv();
+          eliminaDiv();
         }
         if (timeLeft == 8) {
           aimationMenuFadeIn();
@@ -120,27 +129,15 @@ btSkills.addEventListener("click", function () {
           document.querySelector(".contenidoPrincipal_link__2").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
           document.querySelector(".contenidoPrincipal_link__3").style.animation = "animate 3s linear infinite, -rotate ease 1s backwards";
         }
-
         timeLeft--;
       }
-    }
-
-    function muestraDiv() {
-      document.querySelector(".principal").style.display = "none";
-      document.querySelector(".sobreMi").style.display = "none";
-      document.querySelector(".hobbies").style.display = "none";
-      document.querySelector(".social").style.display = "none";
-      document.querySelector(".formacion").style.display = "none";
-      document.querySelector(".proyectos").style.display = "none";
-      document.querySelector(".contacto").style.display = "none";
     }
   }
 });
 
 var btHobbies = document.querySelector("#btHobbies");
-btHobbies.addEventListener("click", function (codificacion) {
+btHobbies.addEventListener("click", function () {
   if (screen.width > 768) {
-    codificacion.preventDefault();
     aimationMenuFadeOuput();
     animationHome();
     animationSobreMi();
@@ -149,18 +146,26 @@ btHobbies.addEventListener("click", function (codificacion) {
     animationProyectos();
     animationContactos();
     document.querySelector(".hobbies").style.animation = "fadeInLeft ease 2s backwards";
-
+    
+    function eliminaDiv() {
+      document.querySelector(".principal").style.display = "none";
+      document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".social").style.display = "none";
+      document.querySelector(".formacion").style.display = "none";
+      document.querySelector(".proyectos").style.display = "none";
+      document.querySelector(".contacto").style.display = "none";
+    }
 
     var timeLeft = 9;
     var timerId = setInterval(countdown, 1000);
-
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
 
       } else {
         if (timeLeft == 9) {
-          muestraDiv();
+          eliminaDiv();
         }
         if (timeLeft == 8) {
           aimationMenuFadeIn();
@@ -174,23 +179,13 @@ btHobbies.addEventListener("click", function (codificacion) {
         timeLeft--;
       }
     }
-    function muestraDiv() {
-      document.querySelector(".principal").style.display = "none";
-      document.querySelector(".sobreMi").style.display = "none";
-      document.querySelector(".skills").style.display = "none";
-      document.querySelector(".social").style.display = "none";
-      document.querySelector(".formacion").style.display = "none";
-      document.querySelector(".proyectos").style.display = "none";
-      document.querySelector(".contacto").style.display = "none";
-    }
   }
 });
 
 
 var btFormacion = document.querySelector("#btFormacion");
-btFormacion.addEventListener("click", function (codificacion) {
+btFormacion.addEventListener("click", function () {
   if (screen.width > 768) {
-    codificacion.preventDefault();
     aimationMenuFadeOuput();
     animationHome();
     animationSobreMi();
@@ -199,18 +194,26 @@ btFormacion.addEventListener("click", function (codificacion) {
     animationProyectos();
     animationContactos();
     document.querySelector(".formacion").style.animation = "fadeInLeft ease 2s backwards";
-
-
+    
+    function eliminaDiv() {
+      document.querySelector(".principal").style.display = "none";
+      document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".social").style.display = "none";
+      document.querySelector(".formacion").style.display = "none";
+      document.querySelector(".proyectos").style.display = "none";
+      document.querySelector(".contacto").style.display = "none";
+    }
+    
     var timeLeft = 9;
     var timerId = setInterval(countdown, 1000);
-
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
 
       } else {
         if (timeLeft == 9) {
-          muestraDiv();
+          eliminaDiv();
         }
         if (timeLeft == 8) {
           aimationMenuFadeIn();
@@ -224,23 +227,13 @@ btFormacion.addEventListener("click", function (codificacion) {
         timeLeft--;
       }
     }
-    function muestraDiv() {
-      document.querySelector(".principal").style.display = "none";
-      document.querySelector(".sobreMi").style.display = "none";
-      document.querySelector(".skills").style.display = "none";
-      document.querySelector(".social").style.display = "none";
-      document.querySelector(".hobbies").style.display = "none";
-      document.querySelector(".proyectos").style.display = "none";
-      document.querySelector(".contacto").style.display = "none";
-    }
   }
 });
 
 
 var btProyectos = document.querySelector("#btProyectos");
-btProyectos.addEventListener("click", function (codificacion) {
+btProyectos.addEventListener("click", function () {
   if (screen.width > 768) {
-    codificacion.preventDefault();
     aimationMenuFadeOuput();
     animationHome();
     animationSobreMi();
@@ -249,18 +242,26 @@ btProyectos.addEventListener("click", function (codificacion) {
     animationFormacion();
     animationContactos();
     document.querySelector(".proyectos").style.animation = "fadeInLeft ease 2s backwards";
-
-
+    
+    function eliminaDiv() {
+      document.querySelector(".principal").style.display = "none";
+      document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".social").style.display = "none";
+      document.querySelector(".formacion").style.display = "none";
+      document.querySelector(".proyectos").style.display = "none";
+      document.querySelector(".contacto").style.display = "none";
+    }
+    
     var timeLeft = 9;
     var timerId = setInterval(countdown, 1000);
-
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
 
       } else {
         if (timeLeft == 9) {
-          muestraDiv();
+          eliminaDiv();
         }
         if (timeLeft == 8) {
           aimationMenuFadeIn();
@@ -274,23 +275,13 @@ btProyectos.addEventListener("click", function (codificacion) {
         timeLeft--;
       }
     }
-    function muestraDiv() {
-      document.querySelector(".principal").style.display = "none";
-      document.querySelector(".sobreMi").style.display = "none";
-      document.querySelector(".skills").style.display = "none";
-      document.querySelector(".social").style.display = "none";
-      document.querySelector(".hobbies").style.display = "none";
-      document.querySelector(".formacion").style.display = "none";
-      document.querySelector(".contacto").style.display = "none";
-    }
   }
 });
 
 
 var btContacto = document.querySelector("#btContacto");
-btContacto.addEventListener("click", function (codificacion) {
+btContacto.addEventListener("click", function () {
   if (screen.width > 768) {
-    codificacion.preventDefault();
     aimationMenuFadeOuput();
     animationHome();
     animationSobreMi();
@@ -299,18 +290,26 @@ btContacto.addEventListener("click", function (codificacion) {
     animationFormacion();
     animationProyectos();
     document.querySelector(".contacto").style.animation = "fadeInLeft ease 2s backwards";
-
-
+    
+    function eliminaDiv() {
+      document.querySelector(".principal").style.display = "none";
+      document.querySelector(".sobreMi").style.display = "none";
+      document.querySelector(".hobbies").style.display = "none";
+      document.querySelector(".social").style.display = "none";
+      document.querySelector(".formacion").style.display = "none";
+      document.querySelector(".proyectos").style.display = "none";
+      document.querySelector(".contacto").style.display = "none";
+    }
+    
     var timeLeft = 9;
     var timerId = setInterval(countdown, 1000);
-
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
 
       } else {
         if (timeLeft == 9) {
-          muestraDiv();
+          eliminaDiv();
         }
         if (timeLeft == 8) {
           aimationMenuFadeIn();
@@ -324,20 +323,10 @@ btContacto.addEventListener("click", function (codificacion) {
         timeLeft--;
       }
     }
-    function muestraDiv() {
-      document.querySelector(".principal").style.display = "none";
-      document.querySelector(".sobreMi").style.display = "none";
-      document.querySelector(".skills").style.display = "none";
-      document.querySelector(".social").style.display = "none";
-      document.querySelector(".hobbies").style.display = "none";
-      document.querySelector(".formacion").style.display = "none";
-      document.querySelector(".proyectos").style.display = "none";
-
-    }
   }
 });
 
 var btcv = document.querySelector("#cv");
-btcv.addEventListener("click", function (codificacion) {
+btcv.addEventListener("click", function () {
   window.open('./img/Profile.pdf', '_blank');
 });

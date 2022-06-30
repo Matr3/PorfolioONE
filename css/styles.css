@@ -23,7 +23,6 @@ body {
 		opacity: 1;
 	}
 }
-
 @keyframes fadeOuput {
 	from {
 		transform: translateY(0%);
@@ -75,7 +74,7 @@ body {
 
 .contenidoPrincipal {
 	position: relative;
-	margin: 5% auto;
+	margin: 5%;
     
 }
 .redesSociales{
@@ -129,18 +128,15 @@ body {
         clip-path: circle(50% at 50% 50%);
       }
     }
-
-	@keyframes -imgRotate{
-		0%{
+@keyframes -imgRotate{
+	0%{	
+		clip-path: circle(50% at 50% 50%);
 			
-			clip-path: circle(50% at 50% 50%);
-			
-		  }
-		 30%,100%{
-			
-			clip-path: circle(0% at 50% 50%);
-		  }
-		}
+	}
+	30%,100%{
+		clip-path: circle(0% at 50% 50%);
+	}
+}
 
 .img_personal{
 	width: 100%;
@@ -302,6 +298,7 @@ body {
 .styleCursiva{
 	font-family: system-ui;
 	font-size: 1.2em;
+	text-align: justify;
 }
 .sobreMi_button{
 	border-radius: 8px;

@@ -108,14 +108,13 @@
 
 @media screen and (max-width:768px) {
     .skills_text__list, .hobbies_text__list{
-    justify-content: center;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width:360px) {
-
-.headerPrincipal_nav{
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    .headerPrincipal_nav{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
