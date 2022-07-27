@@ -41,10 +41,20 @@ function aimationMenuFadeOuput() {
   document.querySelector(".headerPrincipal").style.animation = "fadeOuput ease 3s backwards";
 }
 
-
+function activarBoton(){
+  document.getElementById('btSobreMi').disabled=false;
+  document.getElementById('btSkills').disabled=false;
+  document.getElementById('btHobbies').disabled=false;
+  document.getElementById('btFormacion').disabled=false;
+  document.getElementById('btProyectos').disabled=false;
+  document.getElementById('btContacto').disabled=false;
+}
 
 var btSobreMi = document.querySelector("#btSobreMi");
 btSobreMi.addEventListener("click", function () {
+  activarBoton();
+  document.getElementById('btSobreMi').disabled=true;
+  
   if (screen.width > 768) {
     aimationMenuFadeOuput();
     animationHome();
@@ -54,7 +64,9 @@ btSobreMi.addEventListener("click", function () {
     animationFormacion();
     animationProyectos();
     animationContactos();
-    
+    var timeLeft = 9;
+    var timerId = setInterval(countdown, 1000);
+
     function eliminaDiv() {
       document.querySelector(".principal").style.display = "none";
       document.querySelector(".sobreMi").style.display = "none";
@@ -66,8 +78,6 @@ btSobreMi.addEventListener("click", function () {
       document.querySelector(".contacto").style.display = "none";
     }
 
-    var timeLeft = 9;
-    var timerId = setInterval(countdown, 1000);
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
@@ -93,6 +103,8 @@ btSobreMi.addEventListener("click", function () {
 
 var btSkills = document.querySelector("#btSkills");
 btSkills.addEventListener("click", function () {
+  activarBoton();
+  document.getElementById('btSkills').disabled=true;
   if (screen.width > 768) {
     aimationMenuFadeOuput();
     animationHome();
@@ -139,6 +151,8 @@ btSkills.addEventListener("click", function () {
 
 var btHobbies = document.querySelector("#btHobbies");
 btHobbies.addEventListener("click", function () {
+  activarBoton();
+  document.getElementById('btHobbies').disabled=true;
   if (screen.width > 768) {
     aimationMenuFadeOuput();
     animationHome();
@@ -188,6 +202,8 @@ btHobbies.addEventListener("click", function () {
 
 var btFormacion = document.querySelector("#btFormacion");
 btFormacion.addEventListener("click", function () {
+  activarBoton();
+  document.getElementById('btFormacion').disabled=true;
   if (screen.width > 768) {
     aimationMenuFadeOuput();
     animationHome();
@@ -237,6 +253,8 @@ btFormacion.addEventListener("click", function () {
 
 var btProyectos = document.querySelector("#btProyectos");
 btProyectos.addEventListener("click", function () {
+  activarBoton();
+  document.getElementById('btProyectos').disabled=true;
   if (screen.width > 768) {
     aimationMenuFadeOuput();
     animationHome();
@@ -286,6 +304,8 @@ btProyectos.addEventListener("click", function () {
 
 var btContacto = document.querySelector("#btContacto");
 btContacto.addEventListener("click", function () {
+  activarBoton();
+  document.getElementById('btContacto').disabled=true;
   if (screen.width > 768) {
     aimationMenuFadeOuput();
     animationHome();

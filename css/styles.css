@@ -68,6 +68,9 @@ body {
 }
 
 /*Empieza el contenido del main*/
+main{
+	height: 550px;
+}
 .principal {
 	position: relative;
 }
