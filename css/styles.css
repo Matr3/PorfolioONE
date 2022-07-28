@@ -419,12 +419,10 @@ h3{
 	.formulario{
 		margin: 20px 0;
 	}
-	.piePagina{
-		position:static;
-		bottom:0px;
-		height:60px;
-		width:100%;
+	.social{
+		padding-bottom: 60px;
 	}
+	
 	
 }
 
