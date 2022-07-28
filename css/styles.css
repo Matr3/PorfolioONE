@@ -420,7 +420,7 @@ h3{
 		margin: 20px 0;
 	}
 	.piePagina{
-		position: relative;
+		position: none;
 	}
 }
 
@@ -444,5 +444,8 @@ h3{
 	/* text-align: justify; */
 	text-align: center;
   }
+  .piePagina{
+    position:none;
+}
 
 }
